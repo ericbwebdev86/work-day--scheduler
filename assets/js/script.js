@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     // WHEN I click the save button for that time block
     $(".saveBtn").on("click", function () {
-        let booking = $(this).closest(".description").val();
+        let booking = $(this).siblings(".description").val();
         let hour = $(this).parent().attr("id");
         // THEN the text for that event is saved in local storage
 
@@ -37,6 +37,8 @@ $(document).ready(function () {
                 $(this).addClass("present");
             } else {
                 $(this).addClass("future");
+
+
             }
         });
     };
@@ -59,5 +61,5 @@ $(document).ready(function () {
 
 
 
-//.bg-secondary gray bg
+
 

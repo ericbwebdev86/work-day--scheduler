@@ -70,3 +70,8 @@ textarea{
   transition: all .3s ease-in-out;
   color:black;
 }
+@media screen and (max-width: 330px) {
+  .hour {
+    font-size: 12px;
+  }
+}
